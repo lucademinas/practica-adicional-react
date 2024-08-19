@@ -1,13 +1,21 @@
 import './App.css'
-import Persons from './components/persons/Persons';
+import Family from './components/family/Family'
 
+const persons = [
+  { name: "Juan", age: 26 },
+  { name: "Gabriel", age: 27 },
+  { name: "Valentina", age: 22 },
+  { name: "Paula", age: 25 },
+  { name: "Andrés", age: 20 }
+];
 
-const names = ["Parker","Simmons","Lewis","Poe"];
+const sortedPersons = persons.sort((a, b) => b.age - a.age);
+
 
 const App = () => {
-  
+
   return (
-    <Persons names = {names}/>
+    <Family sortedPersons = {sortedPersons}/>
   )
 }
 
