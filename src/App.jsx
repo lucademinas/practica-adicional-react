@@ -1,14 +1,13 @@
 import './App.css'
-import Products from './components/products/Products';
+import Persons from './components/persons/Persons';
 
 
-const products = ["table","couch","chair1","chair2"];
+const names = ["Parker","Simmons","Lewis","Poe"];
 
 const App = () => {
-
   
   return (
-    <Products products = {products}/>
+    <Persons names = {names}/>
   )
 }
 
